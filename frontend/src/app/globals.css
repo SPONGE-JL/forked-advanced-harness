@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors - Exact match to ygsa.co.kr */
-  --color-primary: #4A6CF7;
-  --color-primary-dark: #3B5BDB;
-  --color-primary-light: #5C7CFA;
-  --color-accent: #FFE066;
-  --color-accent-muted: rgba(255, 224, 102, 0.5);
+  /* Colors - CHACHA brand (teal) */
+  --color-primary: #558C8C;
+  --color-primary-dark: #3D6B6B;
+  --color-primary-light: #6FA8A8;
+  --color-accent: #EFF7FF;
+  --color-accent-muted: rgba(239, 247, 255, 0.8);
 
   --color-dark: #1A1A2E;
   --color-dark-secondary: #16213E;
@@ -21,28 +21,28 @@
   --color-gray-100: #F3F4F6;
   --color-gray-50: #F9FAFB;
 
-  --color-background: #ffffff;
+  --color-background: #FAFCFF;
   --color-background-warm: #F8F9FA;
   --color-background-cool: #F1F3F9;
   --color-background-form: #EEF2FF;
 
   /* shadcn/ui semantic colors */
-  --color-foreground: #1A1A2E;
+  --color-foreground: #1A2A2A;
   --color-card: #ffffff;
-  --color-card-foreground: #1A1A2E;
+  --color-card-foreground: #1A2A2A;
   --color-popover: #ffffff;
-  --color-popover-foreground: #1A1A2E;
+  --color-popover-foreground: #1A2A2A;
   --color-primary-foreground: #ffffff;
   --color-secondary: #F1F3F5;
-  --color-secondary-foreground: #1A1A2E;
+  --color-secondary-foreground: #1A2A2A;
   --color-muted: #F1F3F5;
-  --color-muted-foreground: #6B7280;
-  --color-accent-foreground: #1A1A2E;
+  --color-muted-foreground: #5A7070;
+  --color-accent-foreground: #1A2A2A;
   --color-destructive: #E03131;
   --color-destructive-foreground: #ffffff;
-  --color-border: #E5E7EB;
+  --color-border: #D8E8E8;
   --color-input: #F3F4F6;
-  --color-ring: #4A6CF7;
+  --color-ring: #558C8C;
 
   /* Typography - Pretendard (exact match to ygsa.co.kr) */
   --font-sans: "Pretendard Variable", Pretendard, "Pretendard English", "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", "Noto Sans KR", sans-serif;
@@ -167,6 +167,17 @@
     from {
       opacity: 0;
       transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
     }
     to {
       opacity: 1;
